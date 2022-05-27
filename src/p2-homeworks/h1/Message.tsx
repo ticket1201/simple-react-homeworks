@@ -1,9 +1,18 @@
 import React from 'react'
+// import {inspect} from 'util';
+import styles from './Message.module.css'
+import {messageDataType} from './HW1';
 
-function Message() {
+
+function Message(props: messageDataType) {
     return (
-        <div>
-
+        <div className={styles.message}>
+            <img src={props.avatar} alt="Ava"/>
+            <div className={styles.pop}>
+                <p className={styles.name}>{props.name}</p>
+                <p className={styles.text}>{props.message}</p>
+                <p className={styles.time}>{props.time}</p>
+            </div>
         </div>
     )
 }

@@ -1,3 +1,55 @@
 .message {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    height: 100px;
+    /*background: lightskyblue;*/
+    flex: 1 0;
+}
 
+.message img {
+    height: 80px;
+    border-radius: 50%;
+    align-self: flex-end;
+}
+
+.pop {
+    width: 280px;
+    flex-shrink: 0;
+    position: relative;
+    background: black;
+    border-radius: 8px;
+    padding: 5px 15px;
+
+}
+
+.pop::before {
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+    content: '';
+    width: 24px;
+    height: 16px;
+    background-color: black;
+    clip-path: polygon(51% 0%, 46% 28%, 37% 51%, 22% 71%, 0 100%, 100% 100%, 100% 0);
+}
+
+.name {
+    color: mediumpurple;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.text {
+    color: white;
+    margin: 8px 0;
+}
+
+.time {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    color: lightgray;
+    margin: 0;
+    font-size: 1.125em;
 }
