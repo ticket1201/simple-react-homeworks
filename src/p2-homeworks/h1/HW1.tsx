@@ -1,5 +1,5 @@
 import React from 'react'
-import Message from './Message';
+import Message, {messageDataType} from './Message';
 
 const messageData:messageDataType = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
@@ -8,12 +8,6 @@ const messageData:messageDataType = {
     time: '22:00',
 }
 
-export type messageDataType = {
-    avatar: string,
-    name: string,
-    message: string,
-    time: string
-}
 
 function HW1() {
     return (

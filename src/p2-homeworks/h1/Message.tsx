@@ -1,7 +1,13 @@
 import React from 'react'
 // import {inspect} from 'util';
 import styles from './Message.module.css'
-import {messageDataType} from './HW1';
+
+export type messageDataType = {
+    avatar: string,
+    name: string,
+    message: string,
+    time: string
+}
 
 
 function Message(props: messageDataType) {
