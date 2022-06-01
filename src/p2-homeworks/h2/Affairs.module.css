@@ -1,3 +1,10 @@
-.someClass {
+.affair {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
+}
+
+.button{
+    margin: 10px 5px;
 }
