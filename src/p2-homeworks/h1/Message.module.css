@@ -1,8 +1,9 @@
 .message {
     display: flex;
     gap: 20px;
-    width: fit-content;
-    height: 100px;
+    width: 405px;
+    height: fit-content;
+    opacity: 0.8;
     /*background: lightskyblue;*/
     flex: 1 0;
 }
@@ -15,10 +16,9 @@
 
 .pop {
     width: 280px;
-    flex-shrink: 0;
     position: relative;
     background: black;
-    border-radius: 8px;
+    border-radius: 8px 8px 8px 0;
     padding: 5px 15px;
 
 }
@@ -26,12 +26,11 @@
 .pop::before {
     position: absolute;
     bottom: 0;
-    left: -12px;
+    left: -23px;
     content: '';
     width: 24px;
-    height: 16px;
-    background-color: black;
-    clip-path: polygon(51% 0%, 46% 28%, 37% 51%, 22% 71%, 0 100%, 100% 100%, 100% 0);
+    height: 24px;
+    background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 24px, rgba(0,0,0,1) 0);
 }
 
 .name {
@@ -43,6 +42,8 @@
 .text {
     color: white;
     margin: 8px 0;
+    word-wrap: break-word;
+    width: 230px;
 }
 
 .time {
