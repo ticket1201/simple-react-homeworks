@@ -1,7 +1,39 @@
-.someClass {
-
-}
 
 .error {
     border: 1px solid red;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.input{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.button{
+    padding: 0 10px;
+    background-color: aquamarine;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: aqua;
+}
+
+.errorText{
+    color: red;
+    position: absolute;
+    left: 8px;
+    bottom: 1px;
+}
+
+.total{
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.hw3{
+   position: relative;
 }
