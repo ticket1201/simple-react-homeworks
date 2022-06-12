@@ -13,12 +13,23 @@ function Affair(props: AffairPropsType) {
         props.deleteAffairCallback(_id)
     }// need to fix
 
+    const setStylePriority = () => {
+        switch (props.affair.priority) {
+            case 'low':
+                return s.nameLow
+            case 'middle':
+                return s.nameMiddle
+            case 'high':
+                return s.nameHigh
+        }
+    }
+
     return (
         <div className={s.affair}>
-            <div>{props.affair.name}</div>
-            <div>{props.affair.priority}</div>
+            <div className={s.name}>{props.affair.name}</div>
+            <div className={s.affairPriority + ' ' + setStylePriority()}>{props.affair.priority}</div>
 
-            <button onClick={() => deleteCallback(props.affair._id)}>X</button>
+            <button className={s.affairButton} onClick={() => deleteCallback(props.affair._id)}>X</button>
         </div>
     )
 }
