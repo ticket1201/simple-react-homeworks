@@ -20,7 +20,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             <input value={name} onChange={setNameCallback} className={inputClass}/>
             <button className={s.button} onClick={addUser}>add</button>
             <span className={s.total}>Total users: {totalUsers}</span>
-            <span className={s.errorText}>{error}</span>
+            <p className={s.errorText}>{error}</p>
         </div>
     )
 }
