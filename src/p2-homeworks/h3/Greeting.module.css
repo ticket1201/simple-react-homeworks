@@ -23,6 +23,7 @@
 }
 
 .errorText {
+    position: absolute;
     margin: 0 15px 0;
     color: red;
     left: 8px;
