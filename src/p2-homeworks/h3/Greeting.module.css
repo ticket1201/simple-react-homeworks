@@ -5,35 +5,37 @@
     margin: 0 5px;
 }
 
-.input{
+.input {
     border: 1px solid gray;
     border-radius: 5px;
     margin: 0 5px;
 }
 
-.button{
+.button {
     padding: 0 10px;
     background-color: aquamarine;
     border: 2px solid darkgray;
     border-radius: 5px;
 }
 
-.button:hover{
+.button:hover {
     background-color: aqua;
 }
 
-.errorText{
+.errorText {
+    margin: 0 15px 0;
     color: red;
-    position: absolute;
     left: 8px;
     bottom: 1px;
 }
 
-.total{
+.total {
     margin: 5px;
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
-.hw3{
-   position: relative;
+
+.hw3 {
+    position: relative;
+    height: 50px;
 }
