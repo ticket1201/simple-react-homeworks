@@ -1,7 +1,21 @@
 .default {
-
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid dimgray;
+    border-radius: 5px;
+    background-color: aquamarine;;
+    font-weight: bold;
 }
 
+.default:disabled{
+    background-color: white;
+}
+
+
 .red {
+    cursor: pointer;
     background-color: red;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid dimgray;
 }
