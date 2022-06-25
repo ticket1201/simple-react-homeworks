@@ -1,0 +1,34 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 0;
+    overflow: hidden;
+    transition: width 1.5s ease-in-out;
+}
+
+.links{
+    margin: 0 10px;
+}
+
+
+
+.colorBox{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border: 2px solid mediumaquamarine;
+    border-radius: 2px;
+}
+
+.wrapper:hover .colorBox  {
+    background-color: aquamarine;
+}
+
+.wrapper:hover .container{
+width: 220px;
+
+}
+
