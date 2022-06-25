@@ -1,21 +1,25 @@
-.wrapper{
+.wrapper {
     display: flex;
     align-items: center;
 }
 
-.container{
+.container {
     width: 0;
     overflow: hidden;
     transition: width 1.5s ease-in-out;
 }
 
-.links{
+.links {
     margin: 0 10px;
 }
 
 
+.active {
+    color: white;
+}
 
-.colorBox{
+
+.colorBox {
     width: 20px;
     height: 20px;
     background-color: aqua;
@@ -23,12 +27,12 @@
     border-radius: 2px;
 }
 
-.wrapper:hover .colorBox  {
+.wrapper:hover .colorBox {
     background-color: aquamarine;
 }
 
-.wrapper:hover .container{
-width: 220px;
+.wrapper:hover .container {
+    width: 220px;
 
 }
 
