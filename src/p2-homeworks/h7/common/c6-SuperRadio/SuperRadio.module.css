@@ -1,0 +1,15 @@
+.input:checked {
+
+    accent-color: green;
+    border-color: red;
+    color: red;
+}
+.input{
+    cursor: pointer;
+}
+
+.label{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: green;
+}
