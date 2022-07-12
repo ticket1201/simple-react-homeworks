@@ -20,7 +20,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div className={s.hw3}>
             <SuperInputText value={name} onChange={setNameCallback} className={inputClass} error={error} spanClassName={s.errorText} onEnter={addUser}/>
-            <SuperButton className={s.button} onClick={addUser} children={'add'}/>
+            <SuperButton onClick={addUser} children={'add'}/>
             <span className={s.total}>Total users: {totalUsers}</span>
         </div>
     )
