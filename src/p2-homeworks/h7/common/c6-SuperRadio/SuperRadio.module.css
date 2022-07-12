@@ -1,15 +1,26 @@
-.input:checked {
 
-    accent-color: green;
-    border-color: red;
-    color: red;
-}
 .input{
+    appearance: none;
     cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 50%;
+    border: 1px solid aqua;
 }
+.input:checked {
+    background: mediumslateblue;
+}
+
+.input:hover {
+
+    background: white;
+}
+
 
 .label{
     font-size: 1.25rem;
     font-weight: bold;
-    color: green;
+    color: chartreuse;
+    cursor: pointer;
 }
