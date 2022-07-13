@@ -1,0 +1,13 @@
+.container {
+    width: 200px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: paleturquoise;
+    margin: 5px;
+}
+
+.span{
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid aqua;
+}
