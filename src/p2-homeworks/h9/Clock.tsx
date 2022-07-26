@@ -25,8 +25,8 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = date && `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`// fix with date
-    const stringDate = date && `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}` // fix with date
+    const stringTime = date?.toLocaleTimeString();
+    const stringDate = date?.toLocaleDateString();
 
     return (
         <div className={s.wrapper}>
